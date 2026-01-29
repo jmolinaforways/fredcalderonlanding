@@ -887,4 +887,50 @@ iframe {
         padding: 0;
         /* Remove padding around iframe for max space */
     }
+}/* Hero Adjustments for embedded booking */
+.hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0 60px;
+    /* More padding top and bottom */
+    align-items: flex-start;
+    /* Align closer to top */
+}
+
+.hero-content {
+    max-width: 900px;
+    /* Slightly wider for calendar */
+    margin: 0 auto;
+    text-align: center;
+    /* Center everything */
+}
+
+/* Adjust booking block text/colors for dark background */
+.booking-block-hero .location-info .info-item {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-dark);
+}
+
+.booking-block-hero .location-info .info-item i {
+    color: var(--primary-dark);
+    /* Ensure visibility */
+}
+
+/* Ensure tabs look good on dark bg */
+.booking-block-hero .tab-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: var(--primary-dark);
+}
+
+.booking-block-hero .tab-btn.active {
+    background: var(--accent);
+    color: var(--white);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 80px;
+    }
 }

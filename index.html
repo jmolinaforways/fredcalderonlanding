@@ -38,13 +38,46 @@
             <p class="subtitle">Recuperar tu visión comienza con una evaluación experta. Agenda tu consulta previa para
                 recibir tu diagnóstico y conocer todos los detalles del procedimiento.</p>
 
-            <div class="hero-actions">
-                <a href="#agenda" class="btn btn-primary">
-                    Agendar Cita <small>Distrito Nacional (UCE)</small>
-                </a>
-                <a href="#agenda" class="btn btn-primary">
-                    Agendar Cita <small>Santo Domingo Este (Alma Rosa)</small>
-                </a>
+            <div class="booking-block-hero" style="margin-top: 30px;">
+                <div class="booking-tabs">
+                    <button class="tab-btn active" onclick="switchTab('dn')">
+                        <i class="fa-solid fa-building"></i> Distrito Nacional (UCE)
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('sde')">
+                        <i class="fa-solid fa-hospital"></i> Santo Domingo Este
+                    </button>
+                </div>
+
+                <div class="booking-content active" id="content-dn">
+                    <div class="location-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>C/ Pedro Henríquez Ureña, casi esq. Máximo Gómez, al lado del Centro Médico UCE, Edif.
+                                Profesional Guarionex López Rodríguez, Suite 706, Santo Domingo, DN.</p>
+                        </div>
+                    </div>
+                    <div class="calendar-widget-wrapper">
+                        <iframe src="https://api.leadways.app/widget/booking/SvEUqOeyLiDFnhgX1PhR"
+                            style="width: 100%;border:none;overflow: hidden; min-height: 600px;" scrolling="no"
+                            id="fB3NX67f3Kp2saEIV9Iy_1769718152731"></iframe>
+                    </div>
+                </div>
+
+                <div class="booking-content" id="content-sde">
+                    <div class="location-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Av. Sabana Larga, Esq. Club Activo 20/30, Plaza Popular, Primer Nivel, Alma Rosa 1era,
+                                Santo
+                                Domingo Este.</p>
+                        </div>
+                    </div>
+                    <div class="calendar-widget-wrapper">
+                        <iframe src="https://api.leadways.app/widget/booking/SvEUqOeyLiDFnhgX1PhR"
+                            style="width: 100%;border:none;overflow: hidden; min-height: 600px;" scrolling="no"
+                            id="fB3NX67f3Kp2saEIV9Iy_1769718179658"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -72,54 +105,6 @@
                     <h3>Senasa Subsidiado</h3>
                     <p class="price">RD$ 1,000</p>
                     <p class="desc">Precio especial preferencial</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="agenda" class="booking-section">
-        <div class="container">
-            <h2 class="section-title">Agenda tu Cita</h2>
-            <p class="section-desc">Selecciona la ubicación de tu preferencia</p>
-
-            <div class="booking-tabs">
-                <button class="tab-btn active" onclick="switchTab('dn')">
-                    <i class="fa-solid fa-building"></i> Distrito Nacional (UCE)
-                </button>
-                <button class="tab-btn" onclick="switchTab('sde')">
-                    <i class="fa-solid fa-hospital"></i> Santo Domingo Este
-                </button>
-            </div>
-
-            <div class="booking-content active" id="content-dn">
-                <div class="location-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>C/ Pedro Henríquez Ureña, casi esq. Máximo Gómez, al lado del Centro Médico UCE, Edif.
-                            Profesional Guarionex López Rodríguez, Suite 706, Santo Domingo, DN.</p>
-                    </div>
-                </div>
-
-                <div class="calendar-widget-wrapper">
-                    <iframe src="https://api.leadways.app/widget/booking/SvEUqOeyLiDFnhgX1PhR"
-                        style="width: 100%;border:none;overflow: hidden; min-height: 600px;" scrolling="no"
-                        id="fB3NX67f3Kp2saEIV9Iy_1769718152731"></iframe>
-                </div>
-            </div>
-
-            <div class="booking-content" id="content-sde">
-                <div class="location-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Av. Sabana Larga, Esq. Club Activo 20/30, Plaza Popular, Primer Nivel, Alma Rosa 1era, Santo
-                            Domingo Este.</p>
-                    </div>
-                </div>
-
-                <div class="calendar-widget-wrapper">
-                    <iframe src="https://api.leadways.app/widget/booking/SvEUqOeyLiDFnhgX1PhR"
-                        style="width: 100%;border:none;overflow: hidden; min-height: 600px;" scrolling="no"
-                        id="fB3NX67f3Kp2saEIV9Iy_1769718179658"></iframe>
                 </div>
             </div>
         </div>
