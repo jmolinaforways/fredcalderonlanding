@@ -815,3 +815,55 @@ iframe {
         width: auto;
     }
 }
+/* Mobile Booking Section Optimizations */
+@media (max-width: 600px) {
+    .booking-section {
+        padding: 40px 0;
+        /* Reduce vertical padding */
+    }
+
+    .booking-tabs {
+        flex-wrap: nowrap;
+        /* Force single row */
+        gap: 8px;
+        /* Smaller gap */
+        margin-bottom: 20px;
+    }
+
+    .tab-btn {
+        padding: 10px 5px;
+        /* Compact padding */
+        font-size: 0.8rem;
+        /* Smaller text */
+        flex: 1;
+        /* Distribute space equally */
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap;
+        /* Prevent text wrap if possible */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tab-btn i {
+        display: none;
+        /* Hide icons on mobile to save space if needed, or keep small */
+    }
+
+    .location-info .info-item {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .section-desc {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .calendar-widget-wrapper {
+        min-height: 550px;
+        /* Slight adjustment if needed */
+        padding: 0;
+        /* Remove padding around iframe for max space */
+    }
+}
