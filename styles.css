@@ -761,3 +761,57 @@ iframe {
         font-size: 1.2rem;
     }
 }
+/* Mobile Pricing Optimizations */
+@media (max-width: 600px) {
+    .pricing-section .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .pricing-section .card {
+        padding: 15px 4px;
+        border-radius: 8px;
+        min-height: 160px;
+        /* Uniform height */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .pricing-section .icon {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .pricing-section h3 {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+        /* Ensure 2 lines height */
+        min-height: 2.4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.1;
+    }
+
+    .pricing-section .price {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        font-weight: 800;
+    }
+
+    .pricing-section .desc {
+        font-size: 0.6rem;
+        line-height: 1.1;
+        display: block;
+        /* Keep visible */
+    }
+
+    .bs-badge {
+        font-size: 0.45rem;
+        padding: 2px 15px;
+        top: 8px;
+        right: -18px;
+        width: auto;
+    }
+}
