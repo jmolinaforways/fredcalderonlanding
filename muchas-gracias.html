@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gracias por agendar tu cita con el Dr. Fred Calderón.">
+    <title>¡Gracias por Agendar! - Dr. Fred Calderón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .thank-you-hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .thank-you-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            animation: fadeUp 0.8s ease-out;
+        }
+
+        .check-icon {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+        }
+
+        .thank-you-card h1 {
+            color: var(--primary-dark);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .thank-you-card p {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            text-align: left;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .thank-you-card {
+                padding: 30px 20px;
+            }
+
+            .thank-you-card h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.webp" alt="OftalmoImagen Logo">
+                <span>Dr. Fred Calderón</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="thank-you-hero">
+        <div class="thank-you-card">
+            <i class="fa-solid fa-circle-check check-icon"></i>
+            <h1>¡Gracias por Agendar!</h1>
+            <p>Tu solicitud ha sido recibida exitosamente.</p>
+
+            <div class="highlight-box">
+                <p><i class="fa-brands fa-whatsapp"></i> <strong>Importante:</strong> Le estaremos dando seguimiento vía
+                    WhatsApp. Por favor revise su celular en breves momentos.</p>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--text-light);">¿No recibiste el mensaje o tienes alguna duda
+                urgente?</p>
+
+            <a href="https://wa.me/18299543868?text=He%20realizado%20una%20cita%20mediante%20la%20web%20del%20anuncios%20de%20catarata%20pero%20tengo%20otras%20dudas"
+                target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> Contactar Soporte
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.webp" alt="Logo">
+                <p>Dr. Fred Calderón</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 OftalmoImagen. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
