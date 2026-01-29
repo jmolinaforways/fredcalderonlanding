@@ -117,13 +117,19 @@ a {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 90vh;
-    min-height: 600px;
+    height: auto;
+    /* Changed from 90vh to auto for content fit */
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    /* Or flex-start based on preference */
     color: var(--white);
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 60px;
+    /* Reduced from 70px */
+    padding-top: 40px;
+    /* Reduced padding to pull text up */
+    padding-bottom: 60px;
 }
 
 .hero-bg {
