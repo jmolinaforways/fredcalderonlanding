@@ -942,4 +942,21 @@ iframe {
     .hero {
         padding-top: 80px;
     }
+}/* Mobile About Section Optimizations */
+@media (max-width: 600px) {
+    .about-text h2 {
+        font-size: 1.8rem;
+        /* Smaller title specifically for mobile */
+        text-align: center;
+    }
+
+    .about-text .highlight-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
 }
