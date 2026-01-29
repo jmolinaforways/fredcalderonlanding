@@ -744,4 +744,20 @@ footer {
 
 iframe {
     width: 100%;
+}.experience-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    /* Use the bright teal color */
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+@media (max-width: 900px) {
+    .experience-text {
+        font-size: 1.2rem;
+    }
 }
