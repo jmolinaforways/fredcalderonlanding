@@ -51,7 +51,8 @@ a {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* Center logo and name */
     align-items: center;
 }
 
@@ -887,7 +888,9 @@ iframe {
         padding: 0;
         /* Remove padding around iframe for max space */
     }
-}/* Hero Adjustments for embedded booking */
+}
+
+/* Hero Adjustments for embedded booking */
 .hero {
     height: auto;
     min-height: 100vh;
