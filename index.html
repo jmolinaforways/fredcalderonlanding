@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Consulta oftalmológica especializada en cataratas con el Dr. Fred Calderón. Agenda tu cita en Distrito Nacional o Santo Domingo Este.">
+    <title>Dr. Fred Calderón - Especialista en Cataratas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.webp" alt="OftalmoImagen Logo">
+                <span>Dr. Fred Calderón</span>
+            </a>
+            <a href="#agenda" class="btn btn-primary sm-hidden">Agendar Cita</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="hero.png" alt="Clinica Oftalmologica Moderna">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="badge">Salud Visual Premium</span>
+            <h1>Consulta Oftalmológica <br> <span class="highlight">Cuida tu visión</span></h1>
+            <p class="subtitle">Con el Dr. Fred Calderón<br>Especialista en Cirugía de Cataratas</p>
+
+            <div class="hero-actions">
+                <a href="#agenda" class="btn btn-primary">
+                    Agendar Cita <small>Distrito Nacional (UCE)</small>
+                </a>
+                <a href="#agenda" class="btn btn-outline">
+                    Agendar Cita <small>Santo Domingo Este (Alma Rosa)</small>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card price-card">
+                    <div class="icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3>Seguro Privado</h3>
+                    <p class="price">RD$ 1,500</p>
+                    <p class="desc">Copago por consulta</p>
+                </div>
+                <div class="card price-card featured">
+                    <div class="bs-badge">Más Popular</div>
+                    <div class="icon"><i class="fa-solid fa-file-medical"></i></div>
+                    <h3>Sin Seguro</h3>
+                    <p class="price">RD$ 2,500</p>
+                    <p class="desc">Consulta privada completa</p>
+                </div>
+                <div class="card price-card">
+                    <div class="icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                    <h3>Senasa Subsidiado</h3>
+                    <p class="price">RD$ 1,000</p>
+                    <p class="desc">Precio especial preferencial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agenda" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Agenda tu Cita</h2>
+            <p class="section-desc">Selecciona la ubicación de tu preferencia</p>
+
+            <div class="booking-tabs">
+                <button class="tab-btn active" onclick="switchTab('dn')">
+                    <i class="fa-solid fa-building"></i> Distrito Nacional (UCE)
+                </button>
+                <button class="tab-btn" onclick="switchTab('sde')">
+                    <i class="fa-solid fa-hospital"></i> Santo Domingo Este
+                </button>
+            </div>
+
+            <div class="booking-content active" id="content-dn">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>C/ Pedro Henríquez Ureña, casi esq. Máximo Gómez, al lado del Centro Médico UCE, Edif.
+                            Profesional Guarionex López Rodríguez, Suite 706, Santo Domingo, DN.</p>
+                    </div>
+                </div>
+
+                <div class="calendar-mockup">
+                    <div class="calendar-header">
+                        <h3>Seleccione Fecha y Hora</h3>
+                        <div class="month-selector">
+                            <span class="month">Febrero 2026</span>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <!-- Days Header -->
+                        <div class="day-name">dom</div>
+                        <div class="day-name">lun</div>
+                        <div class="day-name">mar</div>
+                        <div class="day-name">mié</div>
+                        <div class="day-name">jue</div>
+                        <div class="day-name">vie</div>
+                        <div class="day-name">sáb</div>
+                        <!-- Dates -->
+                        <div class="date empty"></div>
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date active">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                    </div>
+                    <div class="time-slots">
+                        <h4>Horarios Disponibles</h4>
+                        <div class="slots-grid">
+                            <button class="slot">10:00 AM</button>
+                            <button class="slot">10:15 AM</button>
+                            <button class="slot">10:30 AM</button>
+                            <button class="slot">10:45 AM</button>
+                            <button class="slot">11:00 AM</button>
+                            <button class="slot">11:15 AM</button>
+                            <button class="slot">11:30 AM</button>
+                            <button class="slot">11:45 AM</button>
+                            <button class="slot">12:00 PM</button>
+                            <button class="slot">12:15 PM</button>
+                            <button class="slot">12:30 PM</button>
+                            <button class="slot">12:45 PM</button>
+                        </div>
+                    </div>
+                    <div class="timezone">
+                        <small>Zona horaria GMT-04:00 America/Santo_Domingo (AST)</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-content" id="content-sde">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Av. Sabana Larga, Esq. Club Activo 20/30, Plaza Popular, Primer Nivel, Alma Rosa 1era, Santo
+                            Domingo Este.</p>
+                    </div>
+                </div>
+
+                <div class="calendar-mockup">
+                    <div class="calendar-header">
+                        <h3>Seleccione Fecha y Hora</h3>
+                        <div class="month-selector">
+                            <span class="month">Febrero 2026</span>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <!-- Days Header -->
+                        <div class="day-name">dom</div>
+                        <div class="day-name">lun</div>
+                        <div class="day-name">mar</div>
+                        <div class="day-name">mié</div>
+                        <div class="day-name">jue</div>
+                        <div class="day-name">vie</div>
+                        <div class="day-name">sáb</div>
+                        <!-- Dates -->
+                        <div class="date empty"></div>
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date">15</div>
+                        <div class="date">16</div>
+                        <div class="date active">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                    </div>
+                    <div class="time-slots">
+                        <h4>Horarios Disponibles</h4>
+                        <div class="slots-grid">
+                            <button class="slot">03:00 PM</button>
+                            <button class="slot">03:15 PM</button>
+                            <button class="slot">03:30 PM</button>
+                            <button class="slot">03:45 PM</button>
+                            <button class="slot">04:00 PM</button>
+                            <button class="slot">04:15 PM</button>
+                            <button class="slot">04:30 PM</button>
+                            <button class="slot">04:45 PM</button>
+                            <button class="slot">05:00 PM</button>
+                            <button class="slot">05:15 PM</button>
+                            <button class="slot">05:30 PM</button>
+                            <button class="slot">05:45 PM</button>
+                        </div>
+                    </div>
+                    <div class="timezone">
+                        <small>Zona horaria GMT-04:00 America/Santo_Domingo (AST)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Sobre el Dr. Fred Calderón</h2>
+                    <p class="highlight-text">Oftalmólogo especializado en cirugía de cataratas y oftalmología general
+                        con más de 25 años de experiencia.</p>
+                    <ul class="stats-list">
+                        <li>
+                            <span class="number">25+</span>
+                            <span class="label">Años de experiencia</span>
+                        </li>
+                        <li>
+                            <span class="number">5,000+</span>
+                            <span class="label">Cirugías realizadas</span>
+                        </li>
+                    </ul>
+                    <p>Director de OftalmoImagen, centro líder en servicios oftalmológicos. Ampliamente reconocido en
+                        medios por su especialidad en procedimientos complejos.</p>
+                </div>
+                <!-- Video Placeholder as per request -->
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                            <div class="video-controls">
+                                <span>Active el sonido</span>
+                                <div>
+                                    <i class="fa-solid fa-volume-xmark"></i>
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="hero.png" alt="Video thumbnail" class="video-thumb">
+                        <!-- Reusing hero as placeholder -->
+                    </div>
+                    <p class="caption">Conoce más sobre el procedimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.webp" alt="Logo">
+                <p>Dr. Fred Calderón</p>
+            </div>
+            <div class="footer-contact">
+                <p>Reserva tu cita hoy mismo y mejora tu visión.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 OftalmoImagen. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
