@@ -702,15 +702,29 @@ footer {
     }
 
     .hero-actions {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        gap: 12px;
+        gap: 8px;
+        justify-content: center;
     }
 
     .hero-actions .btn {
-        width: 100%;
+        width: auto;
+        flex: 1;
+        padding: 10px 4px;
+        /* Tight padding */
+        font-size: 0.8rem;
         display: flex;
-        /* Ensure flex for centering content */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-actions .btn small {
+        font-size: 0.65rem;
+        white-space: normal;
+        /* Allow wrapping */
+        line-height: 1;
+        margin-top: 2px;
     }
 
     .card {
