@@ -669,8 +669,66 @@ footer {
 
     .stats-list {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
-}.calendar-widget-wrapper {
+
+    /* Mobile Hero enhancements */
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin-top: 60px;
+        /* Smaller navbar offset */
+    }
+
+    .hero-bg img {
+        object-position: center;
+        /* Better focus on image center */
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        display: flex;
+        /* Ensure flex for centering content */
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    /* Adjust navbar */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+}
+
+.calendar-widget-wrapper {
     max-width: 600px;
     margin: 0 auto;
     background: var(--white);
