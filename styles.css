@@ -670,4 +670,20 @@ footer {
     .stats-list {
         justify-content: center;
     }
+}.calendar-widget-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    padding: 20px;
+    min-height: 500px;
+    /* Ensure space for loading */
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
 }
